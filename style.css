@@ -50,6 +50,8 @@ body {
     padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
+    padding-right: 0;
+    font-size: 1.2rem;
 }
 
 .navbar .nav li img {
@@ -150,6 +152,11 @@ body {
 }
 .grid-col-span-3 {
     grid-column: span 3;
+    background: #DBDCF0 0% 0% no-repeat padding-box;
+    border-radius: 27px;
+    /* opacity: 0.59; */
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 
 .dash-grid .card {
