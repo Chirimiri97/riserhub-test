@@ -1,0 +1,147 @@
+/* CSS RESETS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+body, form, input, button {
+    font-family: 'Outfit', sans-serif;
+    border: none;
+}
+
+body {
+    max-width: 1920px;
+    padding: 1rem;
+    /* background-color: aqua; */
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.container .sidebar {
+    width: 272px;
+    padding: 1rem;
+    background: #F6F6FF 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 15px #15145724;
+    border-radius: 56px;
+    opacity: 1;
+    text-align: center;
+}
+
+.sidebar .aside-header{
+    display: flex;
+    background: transparent linear-gradient(67deg, #19EDD0 0%, #23D8D2 13%, #3FA4D8 38%, #6B51E1 75%, #8C15E8 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: left;
+    padding: 1rem;
+}
+
+.navbar .nav li{
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav li img {
+    padding-right: 1rem;
+}
+
+.sidebar .image-referel {
+    width: 237px;
+    height: 232px;
+    margin: 1rem 0;
+    background: transparent url('image/Path\ 62774.svg') 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aside-footer {
+    color: #A2A2A2;
+}
+
+.aside-footer p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.hero {
+    padding: 1rem 0;
+    width: 1598px;
+    background: #EAECFC 0% 0% no-repeat padding-box;
+    border-radius: 56px;
+}
+
+.hero .hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.hero-header .heading {
+    padding-left: 15px;
+    color: #2A3141;
+}
+
+.line-break {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #5856EB73;
+    /* opacity: 0.8; */
+    color: #060709;
+
+}
+.hero-header button {
+    padding: 0.5rem 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 15px #211F8F29;
+    border-radius: 18px;
+    width: 240px;
+}
+
+.hero .dash-heading {
+    padding: 1rem 3rem;
+    padding-bottom: 0;
+}
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem 3rem;
+}
+
+.dash-grid .card {
+    max-width: 341px;
+    height: 214px;
+    background: #EFF2FE 0% 0% no-repeat padding-box;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 8px 8px 18px #04044345;
+    border-radius: 18px;
+    position: relative;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-side {
+    position: absolute;
+    right: 0rem;
+    top: 18%;
+}
