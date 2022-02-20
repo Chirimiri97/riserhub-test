@@ -128,9 +128,32 @@ body {
     padding: 1rem 3rem;
 }
 
-.dash-grid .card {
+.inner-dash-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem 1rem;
+}
+
+.inner-dash-grid .card {
     max-width: 341px;
-    height: 214px;
+    /* height: ; */
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.grid-col-span-3 {
+    grid-column: span 3;
+}
+
+.dash-grid .card {
+    min-width: 341px;
+    min-height: 214px;
     background: #EFF2FE 0% 0% no-repeat padding-box;
     padding: 1rem 2rem;
     display: flex;
@@ -145,10 +168,62 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px;
 }
 
 .card-side {
     position: absolute;
     right: 0rem;
     top: 18%;
+}
+
+.inner-flex {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total-earning {
+    margin-bottom: 3rem;
+}
+
+.total-earning .inner-heading h2 {
+    color: #2A3141;
+    /* padding-bottom: 0.3rem; */
+}
+
+.total-earning .inner-heading p {
+    color: #535C70;
+}
+
+.total-earning img {
+    margin: 2rem;
+}
+
+.inner-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.three-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.3rem 0;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.three-dots .dots {
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    display: block;
+    background: #8D97AC 0% 0% no-repeat padding-box;
+}
+
+.three-dots:hover {
+    cursor: pointer;
 }
