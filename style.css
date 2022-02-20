@@ -28,13 +28,14 @@ body {
 }
 
 .container .sidebar {
-    width: 272px;
+    min-width: 272px;
     padding: 1rem;
     background: #F6F6FF 0% 0% no-repeat padding-box;
     box-shadow: 10px 10px 15px #15145724;
     border-radius: 56px;
     opacity: 1;
     text-align: center;
+    height: 100%;
 }
 
 .sidebar .aside-header{
@@ -46,13 +47,18 @@ body {
 }
 
 .navbar .nav li{
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
 }
 
 .navbar .nav li img {
     padding-right: 1rem;
+}
+
+.navbar .nav li:hover {
+    color: blue;
+    cursor: pointer;
 }
 
 .sidebar .image-referel {
@@ -110,8 +116,9 @@ body {
 }
 
 .hero .dash-heading {
-    padding: 1rem 3rem;
-    padding-bottom: 0;
+    padding: 2rem 3rem;
+    padding-bottom: 0rem;
+    color: #060709;
 }
 
 .dash-grid {
