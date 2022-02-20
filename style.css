@@ -124,19 +124,20 @@ body {
 .dash-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 2rem 1rem;
     padding: 1rem 3rem;
 }
 
 .inner-dash-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 1rem 1rem;
+    gap: 0 1rem;
+    padding: 0rem 1rem;
 }
 
 .inner-dash-grid .card {
     max-width: 341px;
+    box-shadow: 8px 8px 18px #04044345;
     /* height: ; */
 }
 
@@ -160,7 +161,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 8px 8px 18px #04044345;
-    border-radius: 18px;
+    border-radius: 2rem;
     position: relative;
 }
 
@@ -177,11 +178,32 @@ body {
     top: 18%;
 }
 
+.card-up {
+    position: absolute;
+    top: 0;
+    left: 13%;
+}
+
+.card-blue {
+    background: transparent linear-gradient(180deg, #4D24F3 0%, #7F08F6 100%) 0% 0% no-repeat padding-box !important;
+    border-radius: 2rem !important;
+    padding: 2rem 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    text-align: center;
+    color: #FFFFFF !important;
+    box-shadow: inset -8px -8px 16px #551FF3 !important;
+    height: 578px;
+}
+
 .inner-flex {
     display: flex;
-    gap: 3rem;
+    gap: 1rem 3rem;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
 .total-earning {
